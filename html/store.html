@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JellyCraft - Store</title>
+	<meta name="description" content="JellyCraft is our effort to create the Minecraft experience we've been looking for. From high-stakes PvP to peaceful creativity, JellyCraft is a place for all. ">	
+	
+	<!--Other Meta Tags-->
+	<meta name="JellyCraft" content="JellyCraft Store - Join IP: play.jellycraft.net">
+	<meta property="og:title" content="JellyCraft - Store">
+	<meta property="og:site_name" content="JellyCraft - Store">
+	<meta property="og:description" content="Store - Join IP: play.jellycraft.net">
+	<meta property="og:image" content="https://jellycraft.net/img/logo.png">
+	<meta property="og:url" content="https://jellycraft.net/">
+	<meta name="twitter:card" content="summary_large_image">
+	<!--End Other Meta Tags-->
+	
+	<!--FavIcon tags-->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!--End FavIcon tags-->
+	
+	<!--Custom Scripts and Styles-->
+	<script src="/js/index.js"></script>
+	<style>
+		/*Minified and inlined for SEO (https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap)*/
+		@font-face{font-family:Lato;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Lato;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+	</style>
+	<script src="https://kit.fontawesome.com/c3a6736944.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/hover-min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	<!--End Custom Scripts and Styles-->
+</head>
+<body>
+<video autoplay muted loop id="videoBG">
+  <source src="/video/Bg-1.mp4" type="video/mp4">
+</video>
+
+<style>
+    .store-item {
+        border: 2px solid #333533;
+        font-size: 21px;
+        width: 100%;
+        background-color: rgba(51, 53, 51, 0.7);
+        padding: 15px;
+        color: #fff;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+        margin-top: 12px; 
+        margin-bottom: 12px; 
+    }
+
+    .store-item span {
+        color: #25C936;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+    }
+</style>
+
+<div class="container" align="center">
+    <style>
+        h1,h2,p {
+            text-shadow: 2px 2px 4px #000000;
+            color: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            display: block;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        h2 {
+            font-size: 1.75em;
+        }
+        .store-image {
+            width: 15em;
+        }
+        p {
+            margin-top: 8px;
+            font-size: 21px;
+            color: #fff;
+            font-size:21px;
+        }
+        .store-buy {
+            width: 150px;
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+        }
+        
+    </style>
+    <div class="row" style="padding-top:1em;padding-bottom:1.5em;">
+        <div class="col-xs-12">
+            <h1>Store</h1>
+            <h2>Your support keeps us going!</h2>
+        </div>
+    </div>
+    <script>
+        function loadMonthlyGoal(){
+            // read text from URL location
+            let currentDate = new Date()
+            let goalsFile = "/store/goals/" + currentDate.getFullYear() + "-" + (currentDate.getMonth()+1) + ".txt"
+            var request = new XMLHttpRequest();
+            request.open('GET', goalsFile, true);
+            request.send(null);
+            request.onreadystatechange = function () {
+                if (request.readyState === 4 && request.status === 200) {
+                    var type = request.getResponseHeader('Content-Type');
+                    if (type.indexOf("text") !== 1) {
+                        let goalNumber = request.responseText;
+                        goalNumber = Math.round(goalNumber*100)/100;
+                        document.getElementById("monthlyGoalProgress").setAttribute("value",goalNumber);
+                    }
+                }
+            }
+        }
+        loadMonthlyGoal();
+    </script>
+    <div class="row">
+        <div class="col-sm-12">
+            <style>
+                #monthlyGoalProgressLabel {
+                    display: block;
+                    text-shadow: 2px 2px 4px #000000;
+                    color: #eee;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: bold;
+                    display: block;
+                    font-size: 21px;
+                    color: #fff;
+                    font-size:21px;
+                }
+                #monthlyGoalProgress {
+                    width: 100%;
+                    height: 5em!important;
+                }
+            </style>
+            <label id="monthlyGoalProgressLabel">Monthly Goal Progress:</label>
+            <progress id="monthlyGoalProgress" value="0" max="200"></progress>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="store-item" align="center"> 
+                <img class="store-image" src="/img/store/1_Member.png" />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="DPPVPMMSF3V5Y">
+                    <!--<table>
+                    <tr>
+                        <td align="center">
+                            <label align="center" style="font-size:0.75em">Minecraft Username</label>
+                            <label align="center" style="font-size:0.5em;display:block">(Not nickname)</label>
+                            <input type="hidden" name="on0" value="Minecraft Username" placeholder="Please write your Minecraft username here">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="os0" maxlength="200" align="center" required="required">
+                        </td>
+                    </tr>
+                    </table>-->
+                    
+                    <!-- <input type="image" class="store-buy" src="/img/store/buy.png" name="submit" > -->
+                </form>
+                <p>Visit the Discord for more info on Membership!</p>
+                <input type="image" class="store-buy" src="/img/store/soon.png" >
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="store-item" align="center"> 
+                <img class="store-image" src="/img/store/P_Member_2.png" />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="YFXC599AE9GMJ">
+                    <!--<table>
+                    <tr>
+                        <td align="center">
+                            <label align="center" style="font-size:0.75em">Minecraft Username</label>
+                            <label align="center" style="font-size:0.5em;display:block">(Not nickname)</label>
+                            <input type="hidden" name="on0" value="Minecraft Username" placeholder="Please write your Minecraft username here">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="os0" maxlength="200" align="center" required="required">
+                        </td>
+                    </tr>
+                    </table> -->
+                    <!-- <input type="image" class="store-buy" src="/img/store/buy.png" name="submit" > -->
+                </form>
+                <p>Visit the Discord for more info on Membership!</p>
+                <input type="image" class="store-buy" src="/img/store/soon.png" >
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" style="padding-top:1em;padding-bottom:1em;font-size:21px;">
+            <p style="margin-top:0px; margin-bottom:0px;">Buying bundles of 6 or 10 keys will also give free rewards to all online players, treat yourself and your friends!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="store-item" align="center"> 
+                <img class="store-image" src="/img/store/3_Fortune.png" />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center" >
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="J5H62GZ73JB2Y">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label align="center" style="font-size:0.75em">Minecraft Username</label>
+                                <label align="center" style="font-size:0.5em;display:block">(Not nickname)</label>
+                                <input type="hidden" name="on0" value="Minecraft Username" placeholder="Please write your Minecraft username here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="os0" maxlength="200" align="center" required="required">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="image" class="store-buy" src="/img/store/buy.png" name="submit" >
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="store-item" align="center"> 
+                <img class="store-image" src="/img/store/6_Fortune.png" />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center" >
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="4FXK66YTRT8S4">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label align="center" style="font-size:0.75em">Minecraft Username</label>
+                                <label align="center" style="font-size:0.5em;display:block">(Not nickname)</label>
+                                <input type="hidden" name="on0" value="Minecraft Username" placeholder="Please write your Minecraft username here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="os0" maxlength="200" align="center" required="required">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="image" class="store-buy" src="/img/store/buy.png" name="submit" >
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="store-item" align="center"> 
+                <img class="store-image" src="/img/store/10_Fortune.png" />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center" >
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="A5XVDY2MT93MQ">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label align="center" style="font-size:0.75em">Minecraft Username</label>
+                                <label align="center" style="font-size:0.5em;display:block">(Not nickname)</label>
+                                <input type="hidden" name="on0" value="Minecraft Username" placeholder="Please write your Minecraft username here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="os0" maxlength="200" align="center" required="required">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="image" class="store-buy" src="/img/store/buy.png" name="submit" >
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="store-item" align="center"> 
+                <img class="store-image" src="/img/store/3_Magic.png" />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center" >
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="34PS668GR3LBN">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label align="center" style="font-size:0.75em">Minecraft Username</label>
+                                <label align="center" style="font-size:0.5em;display:block">(Not nickname)</label>
+                                <input type="hidden" name="on0" value="Minecraft Username" placeholder="Please write your Minecraft username here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="os0" maxlength="200" align="center" required="required">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="image" class="store-buy" src="/img/store/buy.png" name="submit" >
+                </form>
+                <!-- <input type="image" class="store-buy" src="/img/store/soon.png" > -->
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="store-item" align="center"> 
+                <img class="store-image" src="/img/store/6_Magic.png" />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center" >
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="VNNEVFP26686W">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label align="center" style="font-size:0.75em">Minecraft Username</label>
+                                <label align="center" style="font-size:0.5em;display:block">(Not nickname)</label>
+                                <input type="hidden" name="on0" value="Minecraft Username" placeholder="Please write your Minecraft username here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="os0" maxlength="200" align="center" required="required">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="image" class="store-buy" src="/img/store/buy.png" name="submit" >
+                </form>
+                <!-- <input type="image" class="store-buy" src="/img/store/soon.png" > -->
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="store-item" align="center"> 
+                <img class="store-image" src="/img/store/10_Magic.png" />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center" >
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="Z7PSWHN8SN3Z2">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label align="center" style="font-size:0.75em">Minecraft Username</label>
+                                <label align="center" style="font-size:0.5em;display:block">(Not nickname)</label>
+                                <input type="hidden" name="on0" value="Minecraft Username" placeholder="Please write your Minecraft username here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="os0" maxlength="200" align="center" required="required">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="image" class="store-buy" src="/img/store/buy.png" name="submit" >
+                </form>
+                <!-- <input type="image" class="store-buy" src="/img/store/soon.png" > -->
+            </div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-sm-4">
+            <div class="store-item" align="center"> 
+                <img class="store-image" src="/img/store/3_Legendary.png" />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center" >
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="MMF72S4HZQHHN">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label align="center" style="font-size:0.75em">Minecraft Username</label>
+                                <label align="center" style="font-size:0.5em;display:block">(Not nickname)</label>
+                                <input type="hidden" name="on0" value="Minecraft Username" placeholder="Please write your Minecraft username here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="os0" maxlength="200" align="center" required="required">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="image" class="store-buy" src="/img/store/buy.png" name="submit" >
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="store-item" align="center"> 
+                <img class="store-image" src="/img/store/6_Legendary.png" />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center" >
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="8UCL2BKD2VFEN">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label align="center" style="font-size:0.75em">Minecraft Username</label>
+                                <label align="center" style="font-size:0.5em;display:block">(Not nickname)</label>
+                                <input type="hidden" name="on0" value="Minecraft Username" placeholder="Please write your Minecraft username here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="os0" maxlength="200" align="center" required="required">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="image" class="store-buy" src="/img/store/buy.png" name="submit" >
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="store-item" align="center"> 
+                <img class="store-image" src="/img/store/10_Legendary.png" />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center" >
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="CHDK65ZU4A8FN">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label align="center" style="font-size:0.75em">Minecraft Username</label>
+                                <label align="center" style="font-size:0.5em;display:block">(Not nickname)</label>
+                                <input type="hidden" name="on0" value="Minecraft Username" placeholder="Please write your Minecraft username here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="os0" maxlength="200" align="center" required="required">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="image" class="store-buy" src="/img/store/buy.png" name="submit" >
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:12px;">
+        <div class="col-sm-12">
+            <div class="alert alert-danger" role="alert" style="background-color: rgba(248, 215, 218,0.7); margin-bottom:0px; border-radius: 0px;"> 
+                Intentionally charging back the purchase will result in a ban. If the purchase is revoked by accident and a ban occurs,
+                <br />
+                contact us through the Discord for help.
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="custom-container" style="padding-top: 4em; padding-bottom: 2em; max-width:50em;">
+        <style>
+            a,a:hover {
+                color: #61ac4c
+            }
+            .fa-custom {
+              text-shadow: 2px 2px 2px #3b3b3b;
+              font-size: 5em;
+            }
+            @media only screen and (max-width: 720px) {
+                .fa-custom {
+                    font-size: 4em;
+                }
+            }
+        </style>
+        <nav style="padding-bottom: 2em;" >
+            <div class="nav-item">
+                <a href="https://jellycraft.net">
+                    <i class="fa-custom fas fa-home fa-5x hvr-pulse" ></i>
+                </a>
+                <h2>Home</h2>
+            </div>
+            <div class="nav-item">
+                <a href="https://discord.jellycraft.net" target="_blank">
+                    <i class="fa-custom fab fa-discord fa-5x hvr-pulse"></i>
+                </a>
+                <h2>Discord</h2>
+            </div>
+			<div class="nav-item">
+				<a href="https://vote.jellycraft.net/">
+					<i class="fa-custom fas fa-vote-yea fa-5x hvr-pulse"></i>
+				</a>
+				<h2>Vote</h2>
+			</div>
+        </nav>
+        <footer>
+            <div class="players-online-bar">
+                <div class="players-online">
+                    Join us at <span>play.jellycraft.net</span>!
+                </div>
+                <div class="copy-ip" id="copybutton" data-clipboard-text="play.jellycraft.net">
+                    Copy IP
+                </div>
+            </div>
+        </footer>
+        <div style="display:none">
+            <a href="https://minecraft-server.net/category/Survival/" title="Survival Minecraft Server List">Survival Minecraft Server List</a>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script>
+	new ClipboardJS('.copy-ip');
+
+	const copyIP = document.querySelector("#copybutton");
+
+	let lever = 0;
+
+	copyIP.addEventListener('click', () => {
+	  if (!lever)
+	  {
+		copyIP.textContent = "Copied to clipboard!";
+		lever = 1;
+	  }
+
+	  setTimeout(function(){ copyIP.textContent = "Copy IP"; lever = 0; }, 1000);
+	})
+</script>
+</body>
+</html>

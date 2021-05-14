@@ -1,0 +1,56 @@
+#Discord Redirect
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    ssl_certificate         /etc/ssl/cert.pem;
+    ssl_certificate_key     /etc/ssl/key.pem;
+    
+    listen 80;
+
+    server_name discord.jellycraft.net;
+    
+    location / {
+      return 301 https://discord.com/invite/8yBzjhHvfb;
+    }
+}
+
+
+#Main HTTPS
+server {
+	listen 443 ssl http2;
+	listen [::]:443 ssl http2;
+	ssl_certificate         /etc/ssl/cert.pem;
+	ssl_certificate_key     /etc/ssl/key.pem;
+
+	root /var/www/jellycraft.net/html;
+
+	index index.html;
+
+	server_name jellycraft.net www.jellycraft.net;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+
+}
+#HTTP Redirect
+server {
+	listen 80;
+	server_name jellycraft.net www.jellycraft.net;
+	location / {
+		return 302 https://$server_name$request_uri;
+	}
+}
+#Discord Reverse Proxy
+#server {
+#    listen 80;
+#    server_name discord.jellycraft.net;
+#    return 301 https://discord.com/invite/8yBzjhHvfb;
+#}
+	
+#HTTP Redirect
+#server {
+#        listen 80;
+#        server_name jellycraft.net;
+#        return 302 https://$server_name$request_uri;
+#}
