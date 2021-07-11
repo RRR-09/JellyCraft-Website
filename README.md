@@ -1,7 +1,7 @@
 # JellyCraft Website
 A contracted website for a Minecraft server.
 ### Note
-A website built side-by-side with the client (designer). Made to be as vanilla as possible, for ease-of-maintenance for the client who is more comfortable with simplistic HTML.
+A website built side-by-side with the client (designer). Made to be as vanilla as possible, for ease-of-maintenance for the client who is more comfortable editing minimalistic HTML.
 #### Pages:
 1. https://jellycraft.net/index.html
 2. https://jellycraft.net/vote.html
