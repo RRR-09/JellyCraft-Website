@@ -120,7 +120,7 @@
                         let goalNumber = request.responseText;
                         goalNumber = Math.round(goalNumber*100)/100;
                         goalNumber /= 2;
-                        document.getElementById("monthlyGoalProgress").style.width = goalNumber+"%"
+                        document.getElementById("monthlyGoalProgress").style.width =  Math.min(100,goalNumber)+"%"
                         document.getElementById("monthlyGoalProgress").innerText = Math.round(goalNumber)+"%"
                         
                     }
@@ -185,7 +185,10 @@
                     <p>Progress up the skill tree 50% faster!</p>
 
                     <h5>50% Bonus Job Pay & XP</h5>
-                    <p>Earn 50% more job and skill experience!</p>
+                    <p>Earn 50% more money and job xp!</p>
+					
+                    <h5>Fly in Claims</h5>
+                    <p>/fly Free flight and no fall damage while in the borders of your own claims!</p>
 
                     <h5>Summon Mounts</h5>
                     <p>/mounts Need a lift? Instantly call a steed to your side, at any time!</p>
