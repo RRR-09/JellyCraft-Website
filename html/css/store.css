@@ -1,0 +1,85 @@
+h1,h2,p {
+    text-shadow: 2px 2px 4px #000000;
+    color: #eee;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    display: block;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 1.75em;
+}
+p {
+    margin-top: 8px;
+    font-size: 21px;
+    color: #fff;
+    font-size:21px;
+}
+.member-view {
+    display:block;
+}
+.member-view img {
+    padding-top:0.5em;
+}
+.member-link {
+    font-weight: 700;
+}
+.store-header {
+    padding-top:1em;
+    padding-bottom:1.5em;
+}
+.bundle-info-container{
+    padding-top:1em;
+    padding-bottom:1em;
+    font-size:21px;
+}
+.bundle-info-text {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.store-item {
+    border: 2px solid #333533;
+    font-size: 21px;
+    width: 100%;
+    background-color: rgba(51, 53, 51, 0.7);
+    padding: 15px;
+    color: #fff;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    margin-top: 12px; 
+    margin-bottom: 12px; 
+}
+.store-item span {
+    color: #25C936;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+.store-image {
+    width: 15em;
+}
+.store-buy {
+    width: 150px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+.paypal-username-label {
+    font-size:0.75em
+}
+.paypal-username-subtitle {
+    font-size:0.5em;
+    display:block
+}
+.chargeback-warning-container {
+    margin-top:12px!important;
+}
+.chargeback-warning-text {
+    background-color: rgba(248, 215, 218,0.7); 
+    margin-bottom:0px; 
+    border-radius: 0px;
+}

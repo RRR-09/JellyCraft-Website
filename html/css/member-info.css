@@ -1,0 +1,13 @@
+.member-description p {
+    margin-top: 0px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0px 0px 0px #000000;
+    margin-bottom: 2em;
+}
+.member-description div {
+    padding-top:3em;
+}
+.member-description div:last-of-type {
+    padding-bottom:3em;
+}

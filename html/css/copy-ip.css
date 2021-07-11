@@ -1,0 +1,12 @@
+.copy-ip-container {
+  margin-top: 8px;
+  display: flex;
+  font-size: 21px;
+}
+.copy-ip-label {
+  background-color: #434643;
+  padding: 15px;
+}
+.copy-ip-label span {
+  color: #25C936;
+}

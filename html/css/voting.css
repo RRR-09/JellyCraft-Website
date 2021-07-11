@@ -1,0 +1,43 @@
+/*Todo: Cleanup*/
+/*Voting*/
+.voting-container {
+    width: 90%; margin-top: 2em!important;  background-opacity: 30%;border-radius:20px;
+}
+.voting-container h1 {
+    text-shadow: 2px 2px 4px #000000;
+    color: #eee;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+}
+.vote-name {
+    margin-top: 8px;
+    border: 2px solid #333533;
+    font-size: 21px;
+    width: 60%;
+    background-color: #333533;
+    padding: 15px;
+    color: #fff;
+}
+.vote-name span {
+    color: #25C936;
+}
+.voting-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 16px;
+    color: #fff;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.clickable-div {
+    cursor: pointer;
+}
+.clickable-div, .clickable-div span {    
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
