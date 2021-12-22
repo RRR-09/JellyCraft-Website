@@ -25,6 +25,18 @@
 
 
 /*Homepage*/
+#logo-container, #logo-container h1, #logo-container img{
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}	
 #logo-container h1 img {
     height: 15em;
     width: 15em;
@@ -127,6 +139,26 @@ nav {
   color: #eee;
   text-shadow: 2px 2px 4px #000000;
 }
+.nav-item, .nav-item a, .nav-item i {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.nav-item img {
+  width: 100%;
+}
+/* Navigation items width on desktop */
+.nav-item {
+  width: 22%;
+}
 
 .logo {
   transform: scale(1);
@@ -156,10 +188,6 @@ footer {
   color: #fff;
   flex-wrap: wrap;
   text-align: center;
-}
-
-.nav-item img {
-  width: 100%;
 }
 
 .copy-ip {
@@ -202,10 +230,6 @@ a {
   width: 520px;
 }
 
-/* Navigation items width on desktop */
-.nav-item {
-  width: 22%;
-}
 
 @media (max-width: 1000px) {
 
